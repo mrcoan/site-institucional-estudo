@@ -51,7 +51,7 @@ As bibliotecas são carregadas por CDN, então é preciso estar conectado à int
 
 1. Baixe ou clone o repositório:
    ```bash
-   git clone https://github.com/seu-usuario/nome-do-repositorio.git
+      git clone https://github.com/mrcoan/site-institucional-estudo.git
    ```
 2. Abra o arquivo `index.html` no navegador.
 
@@ -73,4 +73,4 @@ Se usar o VS Code, a extensão **Live Server** atualiza a página automaticament
 
 ## Autor
 
-**[Marco Antonio]** — [GitHub](https://github.com/mrcoan) · [LinkedIn](https://www.linkedin.com/in/mrcoan/)
+**Marco Antonio** — [GitHub](https://github.com/mrcoan) · [LinkedIn](https://www.linkedin.com/in/mrcoan/)
