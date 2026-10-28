@@ -7,7 +7,7 @@ Página inicial de um site institucional de ensino, criada como **projeto de est
 ## Pré-visualização
 
 ![Página inicial Desktop](docs/preview-desktop.png)
-![Página inicial Mobile](docs/preview-desktop.png)
+![Página inicial Mobile](docs/preview-mobile.png)
 
 ## Funcionalidades
 
