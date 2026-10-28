@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site institucional de ensino com cursos, serviços, pesquisa, extensão e notícias. Projeto de estudo em HTML, CSS e JavaScript.">
+
+    <!-- Ícone
+    <link rel="icon" type="image/png" href="assets/img/logo.ico"> -->
+
+    <!-- Título -->
+    <title>Site Institucional de Ensino | Projeto de Estudo</title>
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/e58c4bea5f.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+
+        <!-- Logo -->
+        <div id="logo">
+            <a href="index.html">
+                <h2>Ensino</h2>
+                <!-- <img src="assets/img/logo.png" alt="Início" title="Início">-->
+            </a>
+
+        </div>
+
+
+        <!-- Navbar -->
+        <nav id="navbar">
+            <ul>
+                <li><a href="#">Sobre <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="subnavbar">
+                        <li><a href="#">Quem somos</a></li>
+                        <li><a href="#">Estrutura</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Cursos <i class="fa-solid fa-chevron-down"></i></a>
+
+                    <ul class="subnavbar">
+                        <li><a href="#">Graduação</a></li>
+                        <li><a href="#">Pós-graduação</a></li>
+                        <li><a href="#">Cursos livres</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Estudante <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="subnavbar">
+                        <li><a href="#">Portal do Aluno</a></li>
+                        <li><a href="#">Pesquisa</a></li>
+                        <li><a href="#">Extensão</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Serviços <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="subnavbar">
+                        <li><a href="#">Biblioteca</a></li>
+                        <li><a href="#">Clínica de Saúde</a></li>
+                        <li><a href="#">Núcleo de Atendimento</a></li>
+                        <li><a href="#">Eventos e Cultura</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contato <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="subnavbar">
+                        <li><a href="#">Enviar mensagem</a></li>
+                        <li><a href="#">Telefones e endereços</a></li>
+                        <li><a href="#">Secretaria</a></li>
+                        <li><a href="#">Carreiras</a></li>
+                        <li><a href="#">Ouvidoria</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Colaboradores</a></li>
+                <li><a href="#">Notícias</a></li>
+            </ul>
+        </nav>
+
+        <!-- Acessos -->
+        <div id="acessos-header">
+            <a href="#" class="btn btn-destaque">Vestibular</a>
+            <a href="#" class="btn btn-secundario">Portal do Aluno</a>
+        </div>
+
+        <button id="btn-menu" class="btn btn-secundario"><i class="fa-solid fa-bars"></i></button>
+
+    </header>
+
+    <!-- Apresentação - Hero -->
+    <section id="hero" data-aos="fade-up">
+
+        <div class="container">
+
+            <div class="apresentacao">
+                <h2>Projeto de Estudo</h2>
+                <h1>
+                    Seu próximo<br>
+                    passo começa<br>
+                    aqui.
+                </h1>
+
+                <a href="#" class="btn btn-destaque">Inscreva-se</a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Números da instituição -->
+    <section id="numeros" data-aos="fade-up">
+        <div class="container numeros-display">
+            <div><strong><span class="contador" data-alvo="50">0</span>+</strong><span>anos de história</span></div>
+            <div><strong><span class="contador" data-alvo="10000">0</span>+</strong><span>estudantes matriculados</span>
+            </div>
+            <div><strong><span class="contador" data-alvo="35">0</span>+</strong><span>cursos de graduação</span></div>
+        </div>
+    </section>
+
+    <hr data-aos="fade-up">
+
+    <!-- Atalhos -->
+    <section id="atalhos" data-aos="fade-up">
+
+        <div class="container">
+
+            <h2 class="titulo-section"><span class="texto-verde">A</span>cessos Rápidos</h2>
+            <p class="subtitulo-section">Vá direto ao que você procura.</p>
+
+            <div class="atalhos-display display-grid">
+
+                <a href="#">
+                    <div class="card-alternativo">
+                        <p class="pre-titulo-card">Futuro aluno</p>
+                        <h3 class="titulo-card">Ingresso e Processo Seletivo</h3>
+                        <p class="paragrafo-card">Etapas, datas e formas de entrada.</p>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="card-alternativo">
+                        <p class="pre-titulo-card">Estudante</p>
+                        <h3 class="titulo-card">Portal do Aluno</h3>
+                        <p class="paragrafo-card">Notas, materiais e atendimento.</p>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="card-alternativo">
+                        <p class="pre-titulo-card">Equipe</p>
+                        <h3 class="titulo-card">Portal do Colaborador</h3>
+                        <p class="paragrafo-card">Sistemas e comunicados internos.</p>
+                    </div>
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <hr data-aos="fade-up">
+
+    <!-- Destaques -->
+
+    <section id="destaques" data-aos="fade-up">
+
+        <div class="container">
+
+            <h2 class="titulo-section"><span class="texto-verde">A</span>tividades em Destaque</h2>
+            <p class="subtitulo-section">Saiba o que está acontecendo no momento.</p>
+
+
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="assets/img/destaque1.jpg" alt="Palestrante falando para um auditório cheio">
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="assets/img/destaque2.jpg" alt="Estudante fazendo anotações em um caderno">
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="assets/img/destaque3.jpg" alt="Notebook sobre uma mesa com um copo e um celular">
+                        </a>
+                    </div>
+
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <hr data-aos="fade-up">
+
+    <!-- Cursos -->
+    <section id="cursos" data-aos="fade-up">
+
+        <div class="container">
+
+            <h2 class="titulo-section"><span class="texto-verde">E</span>scolha sua Graduação</h2>
+            <p class="subtitulo-section">Cursos em destaque. Conheça todos os cursos da instituição.</p>
+
+            <div class="cursos-display display-grid">
+
+                <a href="#">
+                    <div class="card">
+                        <img src="assets/img/curso.jpg" alt="Estudante usando um notebook" title="Curso">
+                        <div class="card-content">
+                            <p class="pre-titulo-card">Graduação</p>
+                            <h3 class="titulo-card">Curso</h3>
+                            <p class="subtitulo-card">Presencial</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="card">
+                        <img src="assets/img/curso.jpg" alt="Estudante usando um notebook" title="Curso">
+                        <div class="card-content">
+                            <p class="pre-titulo-card">Graduação</p>
+                            <h3 class="titulo-card">Curso</h3>
+                            <p class="subtitulo-card">Presencial</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="card">
+                        <img src="assets/img/curso.jpg" alt="Estudante usando um notebook" title="Curso">
+                        <div class="card-content">
+                            <p class="pre-titulo-card">Graduação</p>
+                            <h3 class="titulo-card">Curso</h3>
+                            <p class="subtitulo-card">Presencial</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="card">
+                        <img src="assets/img/curso.jpg" alt="Estudante usando um notebook" title="Curso">
+                        <div class="card-content">
+                            <p class="pre-titulo-card">Graduação</p>
+                            <h3 class="titulo-card">Curso</h3>
+                            <p class="subtitulo-card">Presencial</p>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+
+            <div class="link-section-centralizado">
+                <a href="#" class="btn btn-principal">Ver todos os cursos</a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <hr data-aos="fade-up">
+
+    <!-- Referência -->
+    <section id="referencia" data-aos="fade-up">
+
+        <div class="container">
+
+            <h2 class="titulo-section"><span class="texto-verde">P</span>or que Estudar Aqui?</h2>
+            <p class="subtitulo-section">Três motivos para começar a sua jornada.</p>
+
+            <div class="referencia-display display-grid">
+
+                <div class="">
+                    <img src="assets/img/graduacao.png" alt="Ícone de capelo de formatura" title="Ensino com propósito">
+                    <h3 class="titulo-card">Ensino com propósito</h3>
+                    <p class="paragrafo-card">
+                        Cursos pensados para unir teoria e prática, com professores próximos e
+                        conteúdos atualizados para a realidade de cada profissão.
+                    </p>
+                </div>
+
+                <div class="">
+                    <img src="assets/img/distintivo.png" alt="Ícone de distintivo" title="Conexão com o mercado">
+                    <h3 class="titulo-card">Conexão com o mercado</h3>
+                    <p class="paragrafo-card">
+                        Parcerias, estágios e projetos reais ajudam você a chegar preparado ao
+                        primeiro emprego e a construir uma rede de contatos.
+                    </p>
+                </div>
+
+                <div class="">
+                    <img src="assets/img/mensalidade.png" alt="Ícone de dinheiro" title="Apoio ao estudante">
+                    <h3 class="titulo-card">Apoio ao estudante</h3>
+                    <p class="paragrafo-card">
+                        Bolsas, descontos e programas de permanência para que o custo não seja
+                        um obstáculo na sua formação.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <hr data-aos="fade-up">
+
+    <!-- Serviços -->
+    <section id="servicos" data-aos="fade-up">
+
+        <div class="container">
+
+            <h2 class="titulo-section"><span class="texto-verde">S</span>erviços e Atendimentos</h2>
+            <p class="subtitulo-section">Estrutura de apoio aos estudantes e à comunidade.</p>
+
+            <div class="servicos-display display-grid">
+
+                <a href="#">
+                    <div class="card-servico">
+                        <img src="assets/img/centro-de-ensino.jpg" alt="Corredor de uma biblioteca com estantes de livros" title="Biblioteca">
+                        <div class="texto-card-servico">
+                            <h3 class="titulo-card">Biblioteca</h3>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="card-servico">
+                        <img src="assets/img/hospital.jpg" alt="Corredor de uma clínica de saúde" title="Clínica de Saúde">
+                        <div class="texto-card-servico">
+                            <h3 class="titulo-card">Clínica de Saúde</h3>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="card-servico">
+                        <img src="assets/img/ambulatorio.jpg" alt="Sala de atendimento com maca" title="Núcleo de Atendimento">
+                        <div class="texto-card-servico">
+                            <h3 class="titulo-card">Núcleo de Atendimento</h3>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="card-servico">
+                        <img src="assets/img/centro-cultural.jpg" alt="Silhuetas de pessoas com os braços para cima em um evento" title="Eventos e Cultura">
+                        <div class="texto-card-servico">
+                            <h3 class="titulo-card">Eventos e Cultura</h3>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+
+            <div class="link-section-centralizado">
+                <a href="#" class="btn btn-principal">Outros serviços</a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <hr data-aos="fade-up">
+
+    <!-- Pesquisa e Extensão -->
+    <section id="pesquisa-e-extensao" data-aos="fade-up">
+
+        <div class="container">
+
+            <h2 class="titulo-section"><span class="texto-verde">P</span>esquisa e Extensão</h2>
+            <p class="subtitulo-section">
+                Conhecimento que vai além da sala de aula.
+            </p>
+
+            <div class="pesquisa-e-extensao-display display-grid">
+
+                <div class="card-pesquisa-e-extensao">
+                    <img src="assets/img/pesquisa.png" alt="Ilustração de pesquisa e inovação"
+                        title="Pesquisa e Inovação">
+                    <div>
+                        <h3 class="titulo-card">Pesquisa e Inovação</h3>
+                        <p class="paragrafo-card">
+                            Estudantes e professores desenvolvem projetos que transformam ideias em soluções.
+                            Conheça as linhas de pesquisa, as bolsas de iniciação científica e as oportunidades
+                            para participar.
+                        </p>
+                        <a href="#" class="btn btn-principal">Ver mais</a>
+                    </div>
+                </div>
+
+                <div class="card-pesquisa-e-extensao">
+                    <div>
+                        <h3 class="titulo-card">Extensão e Comunidade</h3>
+                        <p class="paragrafo-card">
+                            Cursos, oficinas e projetos que levam o aprendizado para fora da sala de aula e
+                            aproximam a instituição da comunidade. Veja o que está aberto e participe.
+                        </p>
+                        <a href="#" class="btn btn-principal">Ver mais</a>
+                    </div>
+                    <img src="assets/img/extensao.png" alt="Ilustração de atividades de extensão" title="Extensão e Comunidade">
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <hr data-aos="fade-up">
+
+    <!-- Notícias -->
+    <section id="noticias" data-aos="fade-up">
+
+        <div class="container">
+
+            <h2 class="titulo-section"><span class="texto-verde">Ú</span>ltimas Notícias</h2>
+            <p class="subtitulo-section">Acompanhe o que acontece no dia a dia.</p>
+
+            <div class="noticias-display display-grid">
+
+                <a href="#">
+                    <div class="card-alternativo">
+                        <img src="assets/img/noticia.jpg" alt="Televisão exibindo um telejornal" title="Notícia">
+                        <p class="pre-titulo-card">Pesquisa</p>
+                        <h3 class="titulo-card">Semana de iniciação científica reúne projetos dos estudantes</h3>
+                        <p class="paragrafo-card">
+                            Durante cinco dias, alunos apresentam trabalhos desenvolvidos ao longo do ano e
+                            conversam com professores e convidados sobre os resultados.
+                        </p>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="card-alternativo">
+                        <img src="assets/img/noticia.jpg" alt="Televisão exibindo um telejornal" title="Notícia">
+                        <p class="pre-titulo-card">Estudantes</p>
+                        <h3 class="titulo-card">Biblioteca amplia o horário de atendimento no período de provas</h3>
+                        <p class="paragrafo-card">
+                            O espaço de estudo passa a funcionar em horário estendido, com mesas
+                            individuais e salas para trabalhos em grupo.
+                        </p>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="card-alternativo">
+                        <img src="assets/img/noticia.jpg" alt="Televisão exibindo um telejornal" title="Notícia">
+                        <p class="pre-titulo-card">Extensão</p>
+                        <h3 class="titulo-card">Inscrições abertas para cursos de extensão no próximo semestre</h3>
+                        <p class="paragrafo-card">
+                            São oficinas e cursos de curta duração, abertos à comunidade, em áreas como
+                            comunicação, tecnologia e saúde.
+                        </p>
+                    </div>
+                </a>
+
+            </div>
+
+            <div class="link-section-centralizado">
+                <a href="#" class="btn btn-principal">Mais notícias</a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="container">
+
+            <div class="footer-display-flex">
+
+                <section class="logo-footer">
+                    <h2>Ensino</h2>
+                    <p>&copy; Projeto de Estudo</p>
+                </section>
+
+                <div class="section-footer">
+
+                    <section>
+                        <h4>Sobre</h4>
+                        <ul>
+                            <li><a href="#">Quem somos</a></li>
+                            <li><a href="#">Estrutura</a></li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h4>Cursos</h4>
+                        <ul>
+                            <li><a href="#">Graduação</a></li>
+                            <li><a href="#">Pós-graduação</a></li>
+                            <li><a href="#">Cursos livres</a></li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h4>Estudante</h4>
+                        <ul>
+                            <li><a href="#">Portal do Aluno</a></li>
+                            <li><a href="#">Pesquisa</a></li>
+                            <li><a href="#">Extensão</a></li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h4>Serviços</h4>
+                        <ul>
+                            <li><a href="#">Biblioteca</a></li>
+                            <li><a href="#">Clínica de Saúde</a></li>
+                            <li><a href="#">Núcleo de Atendimento</a></li>
+                            <li><a href="#">Eventos e Cultura</a></li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h4>Contato</h4>
+                        <ul>
+                            <li><a href="#">Enviar mensagem</a></li>
+                            <li><a href="#">Telefones e endereços</a></li>
+                            <li><a href="#">Secretaria</a></li>
+                            <li><a href="#">Carreiras</a></li>
+                            <li><a href="#">Ouvidoria</a></li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h4>Links Rápidos</h4>
+                        <ul>
+                            <li><a href="#">Vestibular</a></li>
+                            <li><a href="#">Colaboradores</a></li>
+                            <li><a href="#">Notícias</a></li>
+                        </ul>
+                    </section>
+
+                </div>
+
+            </div>
+
+            <div class="selos">
+                <img src="assets/img/distintivo.png" alt="Ícone de distintivo" title="Distintivo">
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- JavaScript -->
+
+    <!-- CountUp.JS -->
+    <script src="https://cdn.jsdelivr.net/npm/countup.js@2.8.0/dist/countUp.umd.js"></script>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Swiper js-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+
+    <!-- JS local -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
